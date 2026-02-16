@@ -1,0 +1,118 @@
+:root {
+  /* Brand Palette */
+  --primary-dark: #1a1a1a; /* Deep Charcoal */
+  --accent-gold: #c5a47e; /* Muted Gold */
+  --bg-creme: #f9f7f2; /* Off-white Silk */
+  --text-main: #333333;
+  --text-light: #7a7a7a;
+
+  /* Typography */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Spacing & Borders */
+  --section-padding: 80px 10%;
+  --border-subtle: 1px solid #e0e0e0;
+  --transition: 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-creme);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+/* Layout Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  border-bottom: var(--border-subtle);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.hero-content {
+  padding: var(--section-padding);
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-placeholder {
+  background: #e5e5e5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn {
+  background: var(--primary-dark);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: var(--transition);
+}
+
+.cta-btn:hover {
+  background: var(--accent-gold);
+}
+
+.portfolio {
+  padding: var(--section-padding);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.img-box {
+  background: #eee;
+  aspect-ratio: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter {
+  padding: var(--section-padding);
+  background: #f0ede8;
+  text-align: center;
+}
