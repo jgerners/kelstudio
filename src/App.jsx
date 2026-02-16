@@ -11,7 +11,7 @@ function App() {
         </div>
         <ul className="nav-links">
           <li>
-            <a href="#work">Portfolio</a>
+            <a href="#Portfolio">Portfolio</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -28,12 +28,12 @@ function App() {
         </div>
         <div className="hero-image-container">
           {/* Main Hero Image Placeholder */}
-          <div className="hero-placeholder">Grote foto?</div>
+          <div className="hero-placeholder">Grote foto? / coming soon? </div>
         </div>
       </header>
 
       {/* Portfolio Grid */}
-      <section id="work" className="portfolio">
+      <section id="Portfolio" className="portfolio">
         <h2 className="section-title">Projecten</h2>
         <div className="grid">
           <div className="project-card">
@@ -52,9 +52,9 @@ function App() {
       <section id="contact" className="newsletter">
         <div className="newsletter-card">
           <h3>Blijf geïnspireerd</h3>
-          <p>Bekijk maandelijks onze nieuwste transformaties.</p>
+          <p>Bekijk maandelijks de nieuwste transformaties.</p>
           <form className="subscribe-form">
-            <input type="email" placeholder="Enter your email" required />
+            <input type="email" placeholder="Vul je e-mailadres in" required />
             <button type="submit">Abboneer</button>
           </form>
         </div>
