@@ -34,7 +34,7 @@ function App() {
 
       {/* Portfolio Grid */}
       <section id="work" className="portfolio">
-        <h2 className="section-title">Selected Projects</h2>
+        <h2 className="section-title">Projecten</h2>
         <div className="grid">
           <div className="project-card">
             <div className="img-box">Project Een</div>
