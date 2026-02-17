@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-name {
+  font-family: var(--font-didot);
+  font-size: 1.4rem;
+  color: var(--brand-cream);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icon {
+  color: var(--brand-cream); /* Makes icons white */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+}

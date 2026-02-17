@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Align logo to the left per your design */
+  padding: 40px 60px;
+  width: 100%;
+  position: absolute; /* Sits on top of the background */
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--brand-cream);
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
