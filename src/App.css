@@ -59,18 +59,19 @@ body {
   color: var(--brand-cream);
 }
 
-/* The Main Heading Logic */
 .coming-soon {
-  font-family: var(--font-didot); /* Applied to "Coming" */
+  font-family: var(--font-didot); /* For "Coming" */
   font-size: clamp(3rem, 15vw, 8rem);
   font-weight: 400;
   line-height: 0.9;
   margin: 10px 0;
+  font-style: normal !important; /* Explicitly non-italic */
+  text-transform: none;
 }
 
 .coming-soon span {
-  font-family: var(--font-bookman); /* Applied to "SOON" */
-  font-style: italic;
+  font-family: var(--font-bookman); /* For "SOON" */
+  font-style: italic; /* Explicitly italic */
   text-transform: uppercase;
 }
 
@@ -80,7 +81,7 @@ body {
   font-weight: 300;
   font-size: clamp(1rem, 2.5vw, 1.3rem); /* Increased slightly */
   letter-spacing: 3px;
-  color: #d1d1d1; /* Soft Grey */
+  color: white;
   margin-bottom: 0.5rem;
 }
 
@@ -93,7 +94,7 @@ body {
   max-width: 650px; /* Slightly wider to accommodate larger text */
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
-  color: #a0a0a0; /* Slightly darker grey for readability */
+  color: white; /* Slightly darker grey for readability */
   opacity: 1; /* Removing opacity in favor of a solid hex color */
 }
 
