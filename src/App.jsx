@@ -1,10 +1,18 @@
+import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
-    <div className="app-container">
+    <div
+      className="app-container"
+      style={{
+        backgroundPosition: isMobile ? "70% center" : "center",
+      }}
+    >
       <Navbar /> {/* Stays at top */}
       <main className="hero-center">
         <p className="subtitle">Interieur design & content creatie</p>
